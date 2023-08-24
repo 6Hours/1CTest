@@ -1,8 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace UI
@@ -14,10 +12,10 @@ namespace UI
 
         GameModel.ConsumableTypes type;
 
-        public void Initialize(GameModel.ConsumableTypes _type, Action _showMoreAction)
+        public void Initialize(GameModel.ConsumableTypes _type, UnityAction _showMoreAction)
         {
             type = _type;
-            showMoreBtn.onClick.AddListener(() => _showMoreAction?.Invoke());
+            showMoreBtn.onClick.AddListener(_showMoreAction);
         }
 
         public void UpdateView()

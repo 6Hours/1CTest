@@ -44,7 +44,7 @@ namespace UI
 
         private void ShowConsumablesScreen()
         {
-
+            Consumables.ConsumablesScreen.Create(null);
         }
     }
 }
