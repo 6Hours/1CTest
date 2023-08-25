@@ -39,7 +39,7 @@ namespace UI
 
         private void ShowCurrencyExchangeScreen()
         {
-
+            ExchangeScreen.Create(null);
         }
 
         private void ShowConsumablesScreen()
